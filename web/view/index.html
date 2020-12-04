@@ -1,0 +1,15 @@
+<html>
+<script type="module">
+	import { initView } from './bindle.js'
+	window.onload = async function () {
+		const page = window.location.href.split('id=')[1];
+		const model = await import(`./${page}.js`);
+		const module = await import(`./module.js`);
+		for (let item in module.default) {
+			model.default[item] = module.default[item];
+		}
+		document.write(initView(model.default));
+	};
+</script>
+
+</html>

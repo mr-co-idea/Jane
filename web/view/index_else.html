@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		window.onload = function () {
+			const page = window.location.href.split('id=')[0];
+			const script = document.createElement('script');
+			script.setAttribute('type', 'module');
+			script.setAttribute('src', `../semanticModel/${page}.js`);
+			document.body.insertBefore(script, document.body.lastChild);
+			script.onload = function () {
+				const script = document.createElement('script');
+				script.setAttribute('type', 'module');
+				script.setAttribute('src', `../viewModel/bindle.js`);
+				document.body.insertBefore(script, document.body.lastChild);
+			}
+		};
+	</script>
+</body>
+
+</html>
