@@ -1,0 +1,19 @@
+{
+  "name": "ijane",
+  "version": "2.0.0",
+  "description": "* 解耦和耦合",
+  "main": "Jane.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-co-idea/Jane.git"
+  },
+  "author": "Coles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-co-idea/Jane/issues"
+  },
+  "homepage": "https://github.com/mr-co-idea/Jane#readme"
+}
