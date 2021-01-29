@@ -1,0 +1,14 @@
+{
+  "name": "test_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Coles",
+  "license": "ISC",
+  "devDependencies": {
+    "little_server": "^1.0.0"
+  }
+}
